@@ -230,10 +230,10 @@ class CachedObjectStorageFactory
         }
 
         if ($cacheMethodIsAvailable) {
-            echo 'CLASS: '; var_dump(self::$cacheStorageClass);
-            echo 'METHOD: '; var_dump(self::$cacheStorageMethod);
+            //echo 'CLASS: '; var_dump(self::$cacheStorageClass);
+            //echo 'METHOD: '; var_dump(self::$cacheStorageMethod);
             $cacheStorageClass = __NAMESPACE__ . '\\' . self::$cacheStorageClass;
-            echo 'NAMESPACED: '; var_dump($cacheStorageClass);
+            //echo 'NAMESPACED: '; var_dump($cacheStorageClass);
             $instance = new $cacheStorageClass(
                 $parent,
                 self::$storageMethodParameters[self::$cacheStorageMethod]
